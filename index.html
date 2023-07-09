@@ -8,13 +8,15 @@
         function dice() {
           let d = document.getElementById("result");
           let r = Math.ceil(Math.random()*6);
-          d.textContent = r + '.png';
-          document.write('<img src="./' + result + '">')
+          d.textContent = r;
+
+          diceimg = '<img src="' + r + '.png" alt="dice">';
+          document.write();
         }
       </script>
 </head>
 <body>
     <button onclick="dice()">サイコロ</button>
-    <img src="" alt="" srcset="">
+    <p id="result"></p>
 </body>
 </html>
