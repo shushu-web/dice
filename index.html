@@ -1,30 +1,12 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>しょーなん鯖!　お楽しみ機能</title>
-    <script>
-        function dice() {
-          let d = document.getElementById("result");
-          let r = Math.ceil(Math.random()*6);
-          diceimg = '<img src="' + r + '.png" alt="dice">';
-          document.write(diceimg);
-        }
-        function doReload() {
- 
-           // reloadメソッドによりページをリロード
-          window.location.reload();
-        }
-
-        window.addEventListener('load', function () {
-
-         // ページ表示完了した5秒後にリロード
-        setTimeout(doReload, 5000);
-        });
-      </script>
 </head>
-<body>
-    <button onclick="dice()">サイコロ</button>
+<body background="dice.png">
+    <div class="center"><a href="./dice.html" class="btn btn-gradient"><span>サイコロをふる！</span></a></div>
 </body>
 </html>
