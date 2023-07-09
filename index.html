@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>しょーなん鯖!　お楽しみ機能</title>
+    <script>
+        function dice() {
+          let d = document.getElementById("result");
+          let r = Math.ceil(Math.random()*6);
+          d.textContent = r;
+        }
+      </script>
 </head>
 <body>
-    <input type="button" value="振る!" onclick="(dice)"/>
+    <button onclick="dice()">サイコロ</button>
+    <p id="result"></p>
 </body>
-<script>
-    function dice() {
-    var arr = [ "1", "2", "3", "4", "5", "6" ] ;
-    var a = arr[ Math.floor( Math.random() * arr.length ) ] ;
-    alert (a);
-    document.write('');
-    }
-    </script>
-    </html>
+</html>
