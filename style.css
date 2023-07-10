@@ -1,4 +1,4 @@
-/*まずはお決まりのボックスサイズ算出をborer-boxに */
+
 *,
 *:before,
 *:after {
@@ -9,7 +9,7 @@
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-size: 62.5%;/*rem算出をしやすくするために*/
+  font-size: 62.5%;
 }
 
 .btn,
